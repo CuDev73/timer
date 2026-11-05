@@ -1,0 +1,25 @@
+{
+  "name": "time-web-project",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "App de temporizadores con cuotas de tiempo acumulables: núcleo puro, API MySQL e interfaz web",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "node server/index.js",
+    "dev": "node --watch server/index.js",
+    "db:init": "node server/init-db.js",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "devDependencies": {
+    "vitest": "^3.2.4"
+  },
+  "dependencies": {
+    "dotenv": "^18.0.9",
+    "express": "^5.3.0",
+    "mysql2": "^3.24.6"
+  }
+}
